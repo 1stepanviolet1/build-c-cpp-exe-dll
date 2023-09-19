@@ -1,9 +1,11 @@
 #include <stdio.h>
 
 
-int main()
+size_t log_cnt = 0;
+
+void
+log(const char *msg)
 {
-    puts("Test text");
-    return 0;
+    printf("LOG{%zd}: %s\n", log_cnt, msg);
 
 }
